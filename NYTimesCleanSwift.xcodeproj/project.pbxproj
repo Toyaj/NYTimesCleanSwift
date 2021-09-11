@@ -10,16 +10,16 @@
 		4CBB12D301DBACCC29295008 /* Pods_NYTimesCleanSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E25872C31D49E32C9E89CDB9 /* Pods_NYTimesCleanSwiftTests.framework */; };
 		6475646F859972E661CE5FD6 /* Pods_NYTimesCleanSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D54F985A0D9315C06EFF37FA /* Pods_NYTimesCleanSwift.framework */; };
 		C42AB981A0AE0AB8B165A7D0 /* Pods_NYTimesCleanSwift_NYTimesCleanSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 292D5C17EAF584412FCBDA0A /* Pods_NYTimesCleanSwift_NYTimesCleanSwiftUITests.framework */; };
-		E276799B26ECBF8A009FD54F /* HomeViewControllerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E276799A26ECBF8A009FD54F /* HomeViewControllerInteractor.swift */; };
-		E276799D26ECC028009FD54F /* HomeViewControllerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E276799C26ECC028009FD54F /* HomeViewControllerPresenter.swift */; };
-		E276799F26ECC1F7009FD54F /* HomeViewControllerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E276799E26ECC1F7009FD54F /* HomeViewControllerRouter.swift */; };
-		E27679A126ECC474009FD54F /* HomeViewConrollerWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27679A026ECC474009FD54F /* HomeViewConrollerWorker.swift */; };
-		E27679A326ECC788009FD54F /* HomeViewControllerConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27679A226ECC788009FD54F /* HomeViewControllerConfigurator.swift */; };
+		E276799B26ECBF8A009FD54F /* HomeVCInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E276799A26ECBF8A009FD54F /* HomeVCInteractor.swift */; };
+		E276799D26ECC028009FD54F /* HomeVCPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E276799C26ECC028009FD54F /* HomeVCPresenter.swift */; };
+		E276799F26ECC1F7009FD54F /* HomeVCRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E276799E26ECC1F7009FD54F /* HomeVCRouter.swift */; };
+		E27679A126ECC474009FD54F /* HomeVCWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27679A026ECC474009FD54F /* HomeVCWorker.swift */; };
+		E27679A326ECC788009FD54F /* HomeVCConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27679A226ECC788009FD54F /* HomeVCConfigurator.swift */; };
 		E27679A526ECD266009FD54F /* ArticleDetailsVCInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27679A426ECD266009FD54F /* ArticleDetailsVCInteractor.swift */; };
 		E27679A726ECD2EF009FD54F /* ArticleDetailsVCPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27679A626ECD2EF009FD54F /* ArticleDetailsVCPresenter.swift */; };
 		E27679A926ECD3E5009FD54F /* ArticleDetailsVCRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27679A826ECD3E5009FD54F /* ArticleDetailsVCRouter.swift */; };
 		E27679AC26ECD656009FD54F /* ArticleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27679AB26ECD656009FD54F /* ArticleDetailViewController.swift */; };
-		E27679AE26ECD749009FD54F /* ArticleDetailsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27679AD26ECD749009FD54F /* ArticleDetailsConfigurator.swift */; };
+		E27679AE26ECD749009FD54F /* ArticleDetailsVCConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27679AD26ECD749009FD54F /* ArticleDetailsVCConfigurator.swift */; };
 		E27679B226ECF058009FD54F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27679B126ECF058009FD54F /* NetworkManager.swift */; };
 		E27679B426ECF065009FD54F /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27679B326ECF065009FD54F /* ArticleViewModel.swift */; };
 		E27679B626ECF07C009FD54F /* NYArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27679B526ECF07C009FD54F /* NYArticleModel.swift */; };
@@ -70,16 +70,16 @@
 		D54F985A0D9315C06EFF37FA /* Pods_NYTimesCleanSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NYTimesCleanSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D589CB59332898A6C5430D0D /* Pods-NYTimesCleanSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYTimesCleanSwift.release.xcconfig"; path = "Target Support Files/Pods-NYTimesCleanSwift/Pods-NYTimesCleanSwift.release.xcconfig"; sourceTree = "<group>"; };
 		E25872C31D49E32C9E89CDB9 /* Pods_NYTimesCleanSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NYTimesCleanSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E276799A26ECBF8A009FD54F /* HomeViewControllerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerInteractor.swift; sourceTree = "<group>"; };
-		E276799C26ECC028009FD54F /* HomeViewControllerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerPresenter.swift; sourceTree = "<group>"; };
-		E276799E26ECC1F7009FD54F /* HomeViewControllerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerRouter.swift; sourceTree = "<group>"; };
-		E27679A026ECC474009FD54F /* HomeViewConrollerWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewConrollerWorker.swift; sourceTree = "<group>"; };
-		E27679A226ECC788009FD54F /* HomeViewControllerConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerConfigurator.swift; sourceTree = "<group>"; };
+		E276799A26ECBF8A009FD54F /* HomeVCInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVCInteractor.swift; sourceTree = "<group>"; };
+		E276799C26ECC028009FD54F /* HomeVCPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVCPresenter.swift; sourceTree = "<group>"; };
+		E276799E26ECC1F7009FD54F /* HomeVCRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVCRouter.swift; sourceTree = "<group>"; };
+		E27679A026ECC474009FD54F /* HomeVCWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVCWorker.swift; sourceTree = "<group>"; };
+		E27679A226ECC788009FD54F /* HomeVCConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVCConfigurator.swift; sourceTree = "<group>"; };
 		E27679A426ECD266009FD54F /* ArticleDetailsVCInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailsVCInteractor.swift; sourceTree = "<group>"; };
 		E27679A626ECD2EF009FD54F /* ArticleDetailsVCPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailsVCPresenter.swift; sourceTree = "<group>"; };
 		E27679A826ECD3E5009FD54F /* ArticleDetailsVCRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailsVCRouter.swift; sourceTree = "<group>"; };
 		E27679AB26ECD656009FD54F /* ArticleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewController.swift; sourceTree = "<group>"; };
-		E27679AD26ECD749009FD54F /* ArticleDetailsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailsConfigurator.swift; sourceTree = "<group>"; };
+		E27679AD26ECD749009FD54F /* ArticleDetailsVCConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailsVCConfigurator.swift; sourceTree = "<group>"; };
 		E27679B126ECF058009FD54F /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		E27679B326ECF065009FD54F /* ArticleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
 		E27679B526ECF07C009FD54F /* NYArticleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NYArticleModel.swift; sourceTree = "<group>"; };
@@ -178,7 +178,7 @@
 		E276798926ECBC88009FD54F /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				E276799C26ECC028009FD54F /* HomeViewControllerPresenter.swift */,
+				E276799C26ECC028009FD54F /* HomeVCPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -186,7 +186,7 @@
 		E276798A26ECBC92009FD54F /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				E276799A26ECBF8A009FD54F /* HomeViewControllerInteractor.swift */,
+				E276799A26ECBF8A009FD54F /* HomeVCInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -194,7 +194,7 @@
 		E276798B26ECBC99009FD54F /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				E276799E26ECC1F7009FD54F /* HomeViewControllerRouter.swift */,
+				E276799E26ECC1F7009FD54F /* HomeVCRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -218,7 +218,7 @@
 		E276798E26ECBCB9009FD54F /* Configurator */ = {
 			isa = PBXGroup;
 			children = (
-				E27679A226ECC788009FD54F /* HomeViewControllerConfigurator.swift */,
+				E27679A226ECC788009FD54F /* HomeVCConfigurator.swift */,
 			);
 			path = Configurator;
 			sourceTree = "<group>";
@@ -235,7 +235,7 @@
 		E276799026ECBCDF009FD54F /* Worker */ = {
 			isa = PBXGroup;
 			children = (
-				E27679A026ECC474009FD54F /* HomeViewConrollerWorker.swift */,
+				E27679A026ECC474009FD54F /* HomeVCWorker.swift */,
 			);
 			path = Worker;
 			sourceTree = "<group>";
@@ -274,7 +274,7 @@
 		E276799426ECBD67009FD54F /* Configurator */ = {
 			isa = PBXGroup;
 			children = (
-				E27679AD26ECD749009FD54F /* ArticleDetailsConfigurator.swift */,
+				E27679AD26ECD749009FD54F /* ArticleDetailsVCConfigurator.swift */,
 			);
 			path = Configurator;
 			sourceTree = "<group>";
@@ -694,19 +694,19 @@
 			files = (
 				E277281A26ECF7BB00B41159 /* UIView+Extension.swift in Sources */,
 				E27679B826ECF08E009FD54F /* HomeViewModel.swift in Sources */,
-				E27679A126ECC474009FD54F /* HomeViewConrollerWorker.swift in Sources */,
-				E276799D26ECC028009FD54F /* HomeViewControllerPresenter.swift in Sources */,
+				E27679A126ECC474009FD54F /* HomeVCWorker.swift in Sources */,
+				E276799D26ECC028009FD54F /* HomeVCPresenter.swift in Sources */,
 				E277281B26ECF7BB00B41159 /* ServiceApi.swift in Sources */,
 				E27679AC26ECD656009FD54F /* ArticleDetailViewController.swift in Sources */,
 				E277281826ECF7BB00B41159 /* NYConstant.swift in Sources */,
 				E277281626ECF7BB00B41159 /* ProgressHud.swift in Sources */,
 				E27679B426ECF065009FD54F /* ArticleViewModel.swift in Sources */,
-				E276799B26ECBF8A009FD54F /* HomeViewControllerInteractor.swift in Sources */,
+				E276799B26ECBF8A009FD54F /* HomeVCInteractor.swift in Sources */,
 				E277282826ECFB8100B41159 /* ArticleTableViewCell.swift in Sources */,
-				E27679AE26ECD749009FD54F /* ArticleDetailsConfigurator.swift in Sources */,
+				E27679AE26ECD749009FD54F /* ArticleDetailsVCConfigurator.swift in Sources */,
 				E277281726ECF7BB00B41159 /* UIViewController+Extention.swift in Sources */,
-				E276799F26ECC1F7009FD54F /* HomeViewControllerRouter.swift in Sources */,
-				E27679A326ECC788009FD54F /* HomeViewControllerConfigurator.swift in Sources */,
+				E276799F26ECC1F7009FD54F /* HomeVCRouter.swift in Sources */,
+				E27679A326ECC788009FD54F /* HomeVCConfigurator.swift in Sources */,
 				E27679A526ECD266009FD54F /* ArticleDetailsVCInteractor.swift in Sources */,
 				E277282526ECFB1C00B41159 /* HomeViewController+TableView.swift in Sources */,
 				E2954C7B26EC9ED20023C96C /* HomeViewController.swift in Sources */,

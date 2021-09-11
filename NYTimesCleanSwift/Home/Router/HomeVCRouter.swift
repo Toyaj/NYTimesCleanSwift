@@ -8,10 +8,10 @@
 import Foundation
 
 protocol HomeViewControllerRoutable {
-    func routeToAtticleDetailViewController(articleDetails: ArcticleDetails)
+    func routeToAtticleDetailsViewController(articleDetails: ArcticleDetails)
 }
 
-final class HomeViewControllerRouter {
+final class HomeVCRouter {
     
     private weak var viewController: HomeViewController?
     
@@ -20,9 +20,9 @@ final class HomeViewControllerRouter {
     }
 }
 
-extension HomeViewControllerRouter: HomeViewControllerRoutable {
+extension HomeVCRouter: HomeViewControllerRoutable {
    
-    func routeToAtticleDetailViewController(articleDetails: ArcticleDetails) {
+    func routeToAtticleDetailsViewController(articleDetails: ArcticleDetails) {
         
         guard let articleDetailsVC = viewController?.storyboard?.instantiateViewController(withIdentifier: Constant.ViewControllerTitle.articleDetailViewControllerIdentifier.rawValue) as? ArticleDetailViewController else { return }
         articleDetailsVC.mdlView.model = articleDetails

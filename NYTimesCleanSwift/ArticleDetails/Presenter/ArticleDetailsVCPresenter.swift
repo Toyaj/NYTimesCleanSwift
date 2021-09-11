@@ -13,9 +13,9 @@ protocol ArticleDetailsVCPresentable {
 
 final class ArticleDetailsVCPresenter {
     
-    weak var viewController: ArticleDetailViewControllerDisplayable?
+    weak var viewController: ArticleDetailVCDisplayable?
     
-    init(withController controller: ArticleDetailViewControllerDisplayable) {
+    init(withController controller: ArticleDetailVCDisplayable) {
         self.viewController = controller
     }
     
@@ -24,7 +24,7 @@ final class ArticleDetailsVCPresenter {
 extension ArticleDetailsVCPresenter: ArticleDetailsVCPresentable {
    
     func presentArtist() {
-        viewController?.displayArticles()
+        viewController?.displayArticle()
     }
     
 }

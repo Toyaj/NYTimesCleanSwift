@@ -22,7 +22,7 @@ class ArticleViewModel {
     var sectionName: String {
         getSectionName()
     }
-
+    
     var subSectionName: String {
         getSubSectionName()
     }
@@ -44,7 +44,7 @@ class ArticleViewModel {
         let title = model?.title ?? ""
         return title
     }
- 
+    
     func getPublishDate() -> String {
         
         let publishDate = model?.publishedDate ?? ""

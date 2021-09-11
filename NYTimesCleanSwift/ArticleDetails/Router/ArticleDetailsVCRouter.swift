@@ -22,6 +22,7 @@ final class ArticleDetailsVCRouter {
 }
 
 extension ArticleDetailsVCRouter: ArticleDetailsVCRoutable {
+   
     func routeToHomeViewController() {
         
     }

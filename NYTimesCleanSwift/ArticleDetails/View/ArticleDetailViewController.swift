@@ -7,8 +7,8 @@
 
 import UIKit
 
-protocol ArticleDetailViewControllerDisplayable: AnyObject {
-    func displayArticles()
+protocol ArticleDetailVCDisplayable: AnyObject {
+    func displayArticle()
 }
 
 final class ArticleDetailViewController: UIViewController {
@@ -37,9 +37,9 @@ final class ArticleDetailViewController: UIViewController {
     
 }
 
-extension ArticleDetailViewController: ArticleDetailViewControllerDisplayable {
+extension ArticleDetailViewController: ArticleDetailVCDisplayable {
     
-    func displayArticles() {
+    func displayArticle() {
         ib_TittleLabel.text = mdlView.title
         ib_SectionSubSectionLabel.text = "\(mdlView.sectionName), \(mdlView.subSectionName)"
         ib_PublishDateLabel.text = mdlView.publishDate
@@ -61,11 +61,11 @@ private extension ArticleDetailViewController {
     
     func initialSetup() {
         
-        ArticleDetailsConfigurator().configure(withController: self)
+        ArticleDetailsVCConfigurator().configure(withController: self)
     }
     
     func setTitle() {
         title = Constant.ViewControllerTitle.articleTitle.rawValue
     }
+    
 }
-

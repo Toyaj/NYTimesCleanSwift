@@ -1,5 +1,5 @@
 //
-//  ArticleDetailsConfigurator.swift
+//  ArticleDetailsVCConfigurator.swift
 //  NYTimesCleanSwift
 //
 //  Created by Toyaj Nigam on 11/09/21.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ArticleDetailsConfigurator {
+struct ArticleDetailsVCConfigurator {
     
     func configure(withController controller: ArticleDetailViewController) {
         

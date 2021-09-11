@@ -1,5 +1,5 @@
 //
-//  HomeViewControllerPresenter.swift
+//  HomeVCPresenter.swift
 //  NYTimesCleanSwift
 //
 //  Created by Toyaj Nigam on 11/09/21.
@@ -7,22 +7,22 @@
 
 import Foundation
 
-protocol HomeViewControllerPresentable {
+protocol HomeVCPresentable {
     func presentArticleList(articles: [ArcticleDetails])
     func presentAlert()
 }
 
-final class HomeViewControllerPresenter {
+final class HomeVCPresenter {
     
-    weak var viewController: HomeViewControllerDisplayable?
+    weak var viewController: HomeVCDisplayable?
     
-    init(withController controller: HomeViewControllerDisplayable) {
+    init(withController controller: HomeVCDisplayable) {
         self.viewController = controller
     }
     
 }
 
-extension HomeViewControllerPresenter: HomeViewControllerPresentable {
+extension HomeVCPresenter: HomeVCPresentable {
    
     func presentArticleList(articles: [ArcticleDetails]) {
         viewController?.displayArticles(articles: articles)

@@ -31,17 +31,11 @@ extension HomeViewController: UITableViewDelegate {
     
     // MARK: - UITableView Delegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-       
+        
         guard let articleDetails = viewModel.getArticleDetail(item: indexPath.row) else {
             return
         }
-        
-        router?.routeToAtticleDetailViewController(articleDetails: articleDetails)
-        
-//        let articleDetailCnt: ArticleDetailViewController = (self.storyboard?.instantiateViewController(withIdentifier: Constant.ViewControllerTitle.articleDetailViewControllerIdentifier.rawValue) as! ArticleDetailViewController)
-//        articleDetailCnt.mdlView.model = viewModel.getArticleDetail(item: indexPath.row)
-//        self.navigationController?.pushViewController(articleDetailCnt, animated: true)
-        
+        router?.routeToAtticleDetailsViewController(articleDetails: articleDetails)
     }
     
 }

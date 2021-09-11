@@ -1,5 +1,5 @@
 //
-//  HomeViewControllerInteractor.swift
+//  HomeVCInteractor.swift
 //  NYTimesCleanSwift
 //
 //  Created by Toyaj Nigam on 11/09/21.
@@ -7,26 +7,26 @@
 
 import Foundation
 
-protocol HomeViewControllerInteractable {
+protocol HomeVCInteractable {
     func getArticles()
 }
 
-final class HomeViewControllerInteractor {
+final class HomeVCInteractor {
     
-    let presenter: HomeViewControllerPresentable
-    private let worker = HomeViewConrollerWorker()
+    let presenter: HomeVCPresentable
+    private let homeVCWorker = HomeVCWorker()
     
-    init(withPresenter presenter: HomeViewControllerPresentable) {
+    init(withPresenter presenter: HomeVCPresentable) {
         self.presenter = presenter
     }
 }
 
 
-extension HomeViewControllerInteractor: HomeViewControllerInteractable {
-   
+extension HomeVCInteractor: HomeVCInteractable {
+    
     func getArticles() {
         
-        worker.getArticles { result in
+        homeVCWorker.getArticles { result in
             switch result {
             case .success(let articleDetails):
                 self.presenter.presentArticleList(articles: articleDetails)

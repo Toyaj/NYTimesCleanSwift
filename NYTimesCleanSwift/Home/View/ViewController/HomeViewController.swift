@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol HomeViewControllerDisplayable: AnyObject {
+protocol HomeVCDisplayable: AnyObject {
     func displayArticles(articles: [ArcticleDetails])
     func hideProgressHud()
     func showAlert()
@@ -17,7 +17,7 @@ final class HomeViewController: UIViewController {
     
     @IBOutlet weak var ib_tblView: UITableView!
     
-    var interactor: HomeViewControllerInteractable?
+    var interactor: HomeVCInteractable?
     var router: HomeViewControllerRoutable?
     
     let viewModel: HomeViewModel = HomeViewModel()
@@ -36,8 +36,9 @@ final class HomeViewController: UIViewController {
     
 }
 
-extension HomeViewController: HomeViewControllerDisplayable {
+extension HomeViewController: HomeVCDisplayable {
     
+    // MARK: - showAlert
     func showAlert() {
         DispatchQueue.main.async {
             self.alert(message: Constant.Alert.apiFailMessage.rawValue,
@@ -45,12 +46,14 @@ extension HomeViewController: HomeViewControllerDisplayable {
         }
     }
     
+    // MARK: - HideProgressHud
     func hideProgressHud() {
         DispatchQueue.main.async {
             self.progressHUD.hide()
         }
     }
     
+    // MARK: - DisplayArticles
     func displayArticles(articles: [ArcticleDetails]) {
         viewModel.model = articles
         DispatchQueue.main.async {
@@ -64,7 +67,7 @@ private extension HomeViewController {
     
     func initialSetup() {
         
-        HomeViewControllerConfigurator().configure(withController: self)
+        HomeVCConfigurator().configure(withController: self)
         
     }
     
