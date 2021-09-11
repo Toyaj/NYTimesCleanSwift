@@ -1,10 +1,10 @@
 # NYTimesCleanSwift
 
-#Design Pattern 
+## Design Pattern 
 
-Clean Swift iOS Architecture
+## Clean Swift iOS Architecture
 
-#NY Times Most Popular Articles
+# NY Times Most Popular Articles
 
 
 
