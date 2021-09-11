@@ -1,0 +1,6 @@
+framework module Pods_NYTimesCleanSwift_NYTimesCleanSwiftUITests {
+  umbrella header "Pods-NYTimesCleanSwift-NYTimesCleanSwiftUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

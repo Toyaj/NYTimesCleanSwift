@@ -1,0 +1,6 @@
+framework module Pods_NYTimesCleanSwift {
+  umbrella header "Pods-NYTimesCleanSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}
